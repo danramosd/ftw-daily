@@ -14,6 +14,8 @@ way to update this template, but currently, we follow a pattern:
 
 ## Upcoming version 2020-XX-XX
 
+- [add] Add timeout and other options for getCurrentLocation call.
+  [#1385](https://github.com/sharetribe/ftw-daily/pull/1385)
 - [fix] Fix FieldCheckbox validation on blur event on Firefox.
   [#1384](https://github.com/sharetribe/ftw-daily/pull/1384)
 
