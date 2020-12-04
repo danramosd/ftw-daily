@@ -104,12 +104,18 @@ export const userLocation = () =>
       return;
     }
 
+    const options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0,
+    };
+
     const onSuccess = position =>
       resolve(new LatLng(position.coords.latitude, position.coords.longitude));
 
     const onError = error => reject(error);
 
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
   });
 
 /**
